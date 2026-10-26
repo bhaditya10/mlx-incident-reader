@@ -28,10 +28,10 @@ Change the wording and the answer can become wrong. Missing duration means `null
 
 | Requirement | Details |
 |---|---|
-| Hardware | Apple-silicon Mac (M-series), native arm64 Python. Intel Mac, Windows and Linux are not validated by this package. |
+| Hardware | Apple-silicon Mac **M1 or newer**, with native arm64 Python. Intel Mac, Windows and Linux are not validated by this package. |
 | macOS | 15 or later for the pinned oMLX wheel; core installation may have different upstream requirements. |
 | Python | **3.12**; recorded with 3.12.14. Use `python3.12`, not a different interpreter accidentally supplied by another environment. |
-| Memory | This is a 3.2M-parameter model, not a multi-billion-parameter download. Keep several GB of headroom; a universal minimum has not been measured. |
+| Memory | **16 GB RAM recommended; minimum RAM has not been verified.** This is a 3.2M-parameter model. Keep several GB of headroom for macOS, Python and other applications. |
 | Disk | Reserve several GB for Python dependencies, data and resumable checkpoints. The inference checkpoint itself is about 12.9 MB. |
 | Network | Required for cloning and initial dependency installation. Generation/training uses local files; no hosted inference API or API key is required. |
 | Optional | Node.js 24 for the TypeScript streaming example; Git/Command Line Tools for cloning and source dependencies. |
