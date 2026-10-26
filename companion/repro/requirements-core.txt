@@ -1,0 +1,7 @@
+mlx==0.32.4
+mlx-metal==0.32.4
+mlx-lm @ https://github.com/ml-explore/mlx-lm/archive/94cdcae13b266c337bcaca09b97b9c5a9c0e2cde.zip
+transformers==5.17.0
+tokenizers==0.23.2
+numpy==2.3.5
+safetensors==0.8.0

@@ -1,0 +1,14 @@
+#!/bin/zsh
+set -e
+cd "${0:A:h}"
+if [[ -n "${INCIDENT_PYTHON:-}" ]]; then
+  task_python="$INCIDENT_PYTHON"
+elif [[ -x .venv/bin/python ]]; then
+  task_python="$PWD/.venv/bin/python"
+elif [[ -x repro/env/bin/python ]]; then
+  task_python="$PWD/repro/env/bin/python"
+else
+  print -u2 'Create the environment described in repro/README.md or set INCIDENT_PYTHON to your installed interpreter.'
+  exit 1
+fi
+exec "$task_python" cli.py "$@"

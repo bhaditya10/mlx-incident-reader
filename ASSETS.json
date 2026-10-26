@@ -1,0 +1,18 @@
+{
+  "assets-models-trained.zip": {
+    "sha256": "5805d616fff5dc935c770ad2e1e746e0ec9bd5293e85c0ff867c3a44ad652bf4",
+    "bytes": 13885799
+  },
+  "assets-model-untrained.zip": {
+    "sha256": "cf8eb2250f089189b2da6fcf50e7419b79187d03c3fe40dfec36e979fbfa7c7c",
+    "bytes": 11784741
+  },
+  "assets-data-evidence.zip": {
+    "sha256": "735a2c531034222b7be21dd81923a6e2641e9018700dba249d150e52911e0fe9",
+    "bytes": 851214
+  },
+  "assets-resume-optimizer.zip": {
+    "sha256": "c449f34695104a36ed31dd29c87ba8bca4b4ac2c1110a9a3dc9af0a0abfac09f",
+    "bytes": 23766689
+  }
+}
